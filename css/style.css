@@ -1,5 +1,5 @@
 html {
-background-color: #f1e9c2;
+background-color: #f1e9c2;   
     border-style:double;
     border-color: black;
     border-width: thick;
@@ -12,3 +12,17 @@ background-color: #f1e9c2;
     width: 100px;
     
 }
+
+ul {
+    list-style: none;
+}
+
+li {
+   
+display:inline-block;
+float: left;
+  width: 25%;
+  margin: 2.5%;
+    
+}
+    
