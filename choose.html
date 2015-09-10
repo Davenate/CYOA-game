@@ -2,8 +2,7 @@
 <HTML>
    <HEAD>
 
-        <link rel="stylesheet" href="cyoa.css">
-
+       
              <link rel="stylesheet" href="css/style.css">
 
       <TITLE>
@@ -20,14 +19,14 @@
     <ul id="heros">
         <li>
             <h1>
-            BARBARIAN
+            Warrior
             </h1>
             <p>
-           A Barbarian is physically strong but not very smart.
+           A Warrior is physically strong but not very smart.
             Your choices should reflect on brute strength .
             </p>
      
-            <input type="checkbox" name="barbarian" value="barbarian"> barbarian </input>
+            <button type="radio" name="warrior" id="warrior"> warrior </button>
            
         </li>
      
@@ -39,7 +38,7 @@
           A rogue is not physically very strong but is very althletic and quick.
                 Your choices should reflect on speed, agility.
             </p>
-            <input type="checkbox" name="rogue" value="rogue"> rogue </input>
+            <button type="radio" name="rogue" id="rogue"> rogue </button>
         </li>
 
         <li>
@@ -49,17 +48,29 @@
             <p>
            A wizard is not physically strong nor athletic but is very inteligent. You must use your mind and cunning to survive as well as a few spells.
             </p>
-            <input type="checkbox" name="wizard" value="wizard"> wizard </input>
+            <button type="radio" name="wizard" id="wizard" onclick= heroChoice() > wizard </button>
         </li>
     
     
     
+<script>
+function heroChoice() {
+    var hero = document.getElementById(wizard);
+}
+</script>
+
     
     
     </ul>
     
-    <Button class = "Enter">READY!</Button>
+    <Button class = "enter">READY!</Button>
     
+    <div id="output">
+
+    </div>
+
+    <script src="scripts/gameData.js"></script>
+<script src="scripts/Game.js"></script>
     
 </BODY>
     
