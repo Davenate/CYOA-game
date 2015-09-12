@@ -48,15 +48,18 @@
             <p>
            A wizard is not physically strong nor athletic but is very inteligent. You must use your mind and cunning to survive as well as a few spells.
             </p>
-            <button type="radio" name="wizard" id="wizard" onclick= heroChoice() > wizard </button>
+            <button type="radio" name="wizard" id="wizard" onclick="heroChoice()" > wizard </button>
         </li>
     
     
     
 <script>
-function heroChoice() {
-    var hero = document.getElementById(wizard);
-}
+  var hero = "";
+  function heroChoice() {
+    var wizardButton = document.getElementById("wizard");
+    hero = "wizard";
+    console.log(hero);
+  }
 </script>
 
     
@@ -69,8 +72,8 @@ function heroChoice() {
 
     </div>
 
-    <script src="scripts/gameData.js"></script>
-<script src="scripts/Game.js"></script>
+    <script type="text/javascript" src="scripts/gameData.js"></script>
+<script type="text/javascript" src="scripts/Game.js"></script>
     
 </BODY>
     
