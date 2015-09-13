@@ -4,10 +4,12 @@
 
        
              <link rel="stylesheet" href="css/style.css">
-
+<div id="wrapper">
       <TITLE>
         Choose your hero
       </TITLE>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
    </HEAD>
 <BODY>
 
@@ -17,61 +19,77 @@
    <P>Choose one of these three heroes. Base your decisions on what you think that hero would do.</P>
     
     <ul id="heros">
-        <li>
+        <li id="box">
             <h1>
             Warrior
             </h1>
-            <p>
+            <p id="select">
            A Warrior is physically strong but not very smart.
             Your choices should reflect on brute strength .
             </p>
-     
-            <button type="radio" name="warrior" id="warrior"> warrior </button>
+            <button type="radio" name="warrior" id="warrior" onclick="heroChoiceW()"> Choose Warrior </button>
            
         </li>
      
-        <li>
+        <li id="box">
             <h1>
-            ROGUE
+            Rogue
             </h1>
-            <p>
+            <p id="select">
           A rogue is not physically very strong but is very althletic and quick.
                 Your choices should reflect on speed, agility.
             </p>
-            <button type="radio" name="rogue" id="rogue"> rogue </button>
+            <button type="radio" name="rogue" id="rogue" onclick="heroChoiceR()"> Choose Rogue </button>
         </li>
 
-        <li>
+        <li id="box">
             <h1>
-            WIZARD
+            Apprentice
             </h1>
-            <p>
-           A wizard is not physically strong nor athletic but is very inteligent. You must use your mind and cunning to survive as well as a few spells.
+            <p id="select">
+           The apprentice wizard is not physically strong nor athletic but is very inteligent. You must use your mind and cunning to survive as well as a few spells.
             </p>
-            <button type="radio" name="wizard" id="wizard" onclick="heroChoice()" > wizard </button>
+            <button type="radio" name="apprentice" id="apprentice" onclick="heroChoiceA()" > Choose Apprentice </button>
         </li>
-    
-    
-    
-<script>
-  var hero = "";
-  function heroChoice() {
-    var wizardButton = document.getElementById("wizard");
-    hero = "wizard";
-    console.log(hero);
-  }
-</script>
+        <footer>
+      
+     </ul>
 
-    
-    
-    </ul>
-    
-    <Button class = "enter">READY!</Button>
-    
-    <div id="output">
+    <div id="ready">
+    </div>
+    <Button class = "enter" id="enter" disabled=true>READY!</Button>
+
+          
+</footer>
+</div>    
+      <div id="game" hidden=true>
+        <h1>
+          The Tavern
+        </h1>
+        <p>
+          Your journey begins like most, inside a tavern. You overhear two men from another table taking about a cave deep in the forest
+          that holds a wonderous treasure. Of course, many have entered but none have ever returned. Well, treasure is great but wonderous treasure? That sounds like something to risk your life over! 
+          Suddenly on the other side of the tavern you hear someone yell and a see a table get flipped. A brawl errupts in the far end of the tavern. What will you do?
+        </P>
+
+        <ul>
+          <li id="option">
+            <button class="choice">Join in! I love a good brawl!</button>
+          </li>
+           <li id="option">
+            <button class="choice">leave quietly.</button>
+          </li>
+           <li id="option">
+            <button class="choice">Try to break up the fight.</button>
+          </li>
+         </ul>
+
+      </div>
+   
+    <!-- <div id="output"> -->
 
     </div>
-
+    
     <script type="text/javascript" src="scripts/gameData.js"></script>
 <script type="text/javascript" src="scripts/Game.js"></script>
     
