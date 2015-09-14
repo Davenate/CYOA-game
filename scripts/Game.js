@@ -1,24 +1,28 @@
-// var message = '';
-// var game;
-// var hero;
+var message = '';
+var game;
+var hero;
 
 
-// function print(message) {
-//   var outputDiv = document.getElementById('output');
-//   outputDiv.innerHTML = message;
-// }
+function print(message) {
+  var outputDiv = document.getElementById('output');
+  outputDiv.innerHTML = message;
+}
 
-// function choosePath ( gameData) {
-//    var choice = '<h2>PathName: ' + gameData.pathName + '</h2>';
-//   choice += '<p>Test ' + gameData.test + '</p>';
-//    choice += '<button>Paths: ' + gameData.paths + '</button>';
-//   return choice;
-// }
 
-// if (gameData.paths === true){
-// message = choosePath (gameData);
-// 	print(message);
-// }
+function choosePathObject (room) {
+   var html = '<h2>PathName: ' + room.pathName + '</h2>';
+  html += '<p>Test ' + room.test + '</p>';
+  for (var i = 0; i < room.paths.length; i++){
+    html += '<button class="'+i+'"> ' + room.paths[i] + '</button>';
+  }
+   
+  return html;
+}
+
+if (gameData.paths === true){
+message = choosePath (gameData);
+	print(message);
+}
 
 
 
@@ -51,6 +55,11 @@
           $("#wrapper").hide();
           $("#game").show();
       });
+      $(".choice").click(function(){
+          var html =choosePathObject(gameDataObject.outTown)
+          $("#game").append(html);
+      });
+
     });
 
 
