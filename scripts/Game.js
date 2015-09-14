@@ -1,6 +1,5 @@
 var message = '';
-var game;
-var hero;
+
 
 
 function print(message) {
@@ -10,19 +9,20 @@ function print(message) {
 
 
 function choosePathObject (room) {
-   var html = '<h2>PathName: ' + room.pathName + '</h2>';
-  html += '<p>Test ' + room.test + '</p>';
+   var html = '<h1> ' + room.pathName + '</h1>';
+  html += '<p> ' + room.test + '</p>';
   for (var i = 0; i < room.paths.length; i++){
-    html += '<button class="'+i+'"> ' + room.paths[i] + '</button>';
+    html += '<button id="proceed" class="'+i+'"> ' + room.paths[i] + '</button>';
+
   }
    
-  return html;
+   return html;
 }
 
-if (gameData.paths === true){
-message = choosePath (gameData);
-	print(message);
-}
+// if (gameData.paths === true){
+// message = choosePath (gameData);
+// 	print(message);
+// }
 
 
 
@@ -54,13 +54,23 @@ message = choosePath (gameData);
       $(".enter").click(function(){
           $("#wrapper").hide();
           $("#game").show();
+      })});
+
+      $(".enter").click(function(){
+          var html =choosePathObject(gameDataObject.Tavern)
+          $("#game").append(html);
       });
-      $(".choice").click(function(){
+
+       $("#proceed").click(function(){
+          alert("I work");
           var html =choosePathObject(gameDataObject.outTown)
           $("#game").append(html);
       });
 
-    });
+//id=0, if hero = rogue || apprentice, room.results[0[ else room.results[3]
+//id=1 room.results[1]
+//id=0 room.results[2] 
+    
 
 
 

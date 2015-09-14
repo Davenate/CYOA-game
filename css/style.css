@@ -7,7 +7,13 @@ background-color: #f1e9c2;
     font-family: papyrus; 
     font-weight: bold;
 }
-
+#proceed{
+color: teal;
+    background-color: black;
+font-family: copperplate; 
+    font-weight: bold;
+  
+}
 .Enter {
     color: teal;
     background-color: black;
