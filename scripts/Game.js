@@ -7,12 +7,18 @@ function print(message) {
   outputDiv.innerHTML = message;
 }
 
+//  var getePathResult = function(room) {
+//       var html = '<p> ' + room.results[0]+ '</p>';
+//       console.log(html);
+//       alert("you chose poorly! ill add something that returns you to main page");
+// }
 
 function choosePathObject (room) {
    var html = '<h1> ' + room.pathName + '</h1>';
   html += '<p> ' + room.test + '</p>';
-  for (var i = 0; i < room.paths.length; i++){
-    html += '<button id="proceed" class="'+i+'"> ' + room.paths[i] + '</button>';
+  for (var i = 0; i < room.paths.length; i++)
+  {
+    html += '<button onclick="proceed();" id="proceed" class="'+i+'"> ' + room.paths[i] + '</button>';
 
   }
    
@@ -45,7 +51,22 @@ function choosePathObject (room) {
     hero = "Rogue";
     document.getElementById("ready").innerHTML = "You have chosen the " + (hero)+".";
     document.getElementById("enter").disabled = false;
-  }
+  } 
+   function proceed() {
+      var html = choosePathObject(gameDataObject.outTown)
+                 $("#game").append(html);
+
+    // if ((hero = rogue || apprentice) && (room.paths[0] = true)) {
+    //   getePathResult(room);
+    //   }
+    // else{
+    //   html += '<p> ' + room.results[3]+ '</p>';
+    //     html +=choosePathObject(gameDataObject.outTown)
+    //               $("#game").append(html);
+
+
+
+   };
 
     
 
@@ -59,13 +80,12 @@ function choosePathObject (room) {
       $(".enter").click(function(){
           var html =choosePathObject(gameDataObject.Tavern)
           $("#game").append(html);
+          //if (hero = rogue || apprentice) function(){
+
+          
       });
 
-       $("#proceed").click(function(){
-          alert("I work");
-          var html =choosePathObject(gameDataObject.outTown)
-          $("#game").append(html);
-      });
+     
 
 //id=0, if hero = rogue || apprentice, room.results[0[ else room.results[3]
 //id=1 room.results[1]
