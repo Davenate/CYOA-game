@@ -1,0 +1,63 @@
+<HTML>
+   <HEAD>
+    <link rel="stylesheet" href="css/style.css">
+    <TITLE>Let's play Goblin Punch!</TITLE>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+   </HEAD>
+<BODY>
+   <H1>Goblin Punch!</H1>
+   <P>Click the button to punch the goblin. A random number will be generated representing yours attack. <br> If your is higher or equal to the goblin's, it will take damage. Otherwise, you will take damage. Keep punching until someone wins! </P>
+  
+ 
+
+   <ul id="uList">
+        <li id="box">
+            <h1>
+             Player Roll
+            </h1>
+            <p id="placeholder">
+           </p>
+           <h2> Your Hit Points </h2>
+             <h3 id = "Health">
+              6
+             </h3>
+           
+           
+        </li>
+
+     <li id="score">
+            <h1>
+            Result
+            </h1>
+            <p id="placeholder3">
+            </p>
+             <button id="punch">Punch!</button>
+             <p></p>
+             <!-- <button id="refresh"> Again!</button> -->
+           
+        
+        </li>
+
+     
+        <li id="box">
+            <h1>
+            Goblin Roll
+            </h1>
+            <p id="placeholder2">
+           </p>
+           <h2> Goblin Hit Points </h2>
+             <h3 id = "gHealth">
+              5
+             </h3>
+        </li>
+    </ul>
+
+       
+   <script type="text/javascript" src="scripts/Game.js"></script>
+
+ </BODY>
+   <footer>
+
+    </footer>
+</HTML>
