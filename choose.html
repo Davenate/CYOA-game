@@ -20,7 +20,7 @@
     
     <ul id="heros">
         <li id="box">
-            <h1>
+            <h1 id = "title">
             Warrior
             </h1>
             <p id="select">
@@ -32,7 +32,7 @@
         </li>
      
         <li id="box">
-            <h1>
+            <h1 id = "title">
             Rogue
             </h1>
             <p id="select">
@@ -43,54 +43,38 @@
         </li>
 
         <li id="box">
-            <h1>
+           <h1 id = "title3">
             Apprentice
             </h1>
             <p id="select">
-           The apprentice wizard is not physically strong nor athletic but is very inteligent. You must use your mind and cunning to survive as well as a few spells.
+           The apprentice wizard is not physically strong nor athletic but is very inteligent. You must use your mind and cunning to survive.
             </p>
             <button type="radio" name="apprentice" id="apprentice" onclick="heroChoiceA()" > Choose Apprentice </button>
         </li>
         <footer>
       
      </ul>
+     <p> Actually, it doesn't really matter who choose, (It was the Rogue, right?) that game is still under construction!<br> Instead try Goblin Punch which is essentially the basis of the combat system I would like to implement.
+     </p>
 
     <div id="ready">
     </div>
-    <Button class = "enter" id="enter" disabled=true>READY!</Button>
-
+    <Button class = "enter" id="enter" disabled=true>GOOD!</Button>
+<form action="punch.html">
+<button class = "pgame" id = "pgame" href="punch.html" disabled=true> Play Goblin Punch </button>
+</form>
           
 </footer>
 </div>    
 
-
-      <div id="game" hidden=true>
-        <!-- <h1>
-          The Tavern
-        </h1>
-        <p>
-          Your journey begins like most, inside a tavern. You overhear two men from another table taking about a cave deep in the forest
-          that holds a wonderous treasure. Of course, many have entered but none have ever returned. Well, treasure is great but wonderous treasure? That sounds like something to risk your life over! 
-          Suddenly on the other side of the tavern you hear someone yell and a see a table get flipped. A brawl errupts in the far end of the tavern. What will you do?
-        </P>
-
-        <ul>
-          <li id="option">
-            <button class="choice">Join in! I love a good brawl!</button>
-          </li>
-           <li id="option">
-            <button class="choice">leave quietly.</button>
-          </li>
-           <li id="option">
-            <button class="choice">Try to break up the fight.</button>
-          </li>
-         </ul> -->
-
-      </div>
+      
+                                                  <div id="game" hidden=true>
+                                                   
+                                                  </div>
    
     <!-- <div id="output"> -->
 
-    </div>
+  <!--   </div> -->
     
     <script type="text/javascript" src="scripts/gameData.js"></script>
 <script type="text/javascript" src="scripts/Game.js"></script>

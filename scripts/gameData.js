@@ -44,5 +44,17 @@ var gameDataObject = {
 	results:["You attempt to be intimidating and flex your muscles, or lack therof. Two large men appear from out of the bushes each weilding large clubs. The beat the crap out of you and you die. The End.",	"You begin to walk faster, he takes notice and begins to advance towards you. Just then two large men emerge from the bushes and join with him. You break into a sprint and run as fast as you can. Luckily you were much faster than they were and you got away.",	"You greet the man and ask him if you could be of service. His reply is a snicker as two large men emerge from the bushes behind him. 'Yeah' he chuckles. 'You can give me those shoes' They beat the crap out of you , take your sheos, and you die. Not necessarily in that order. The End"],
 
 
+},
+
+"forest":{
+	pathName: "forest",
+	test: "You outrun mr scary man and you get the the forest. it scary here too. you see goblin. what do?",
+	characters: [
+		"rogue", "warrior", "apprentice"
+	],
+	paths: [ "Punch him in the face", "RUNNNN", "Ask for mustard"],
+	results:["You attempt to be intimidating and flex your muscles, or lack therof. Two large men appear from out of the bushes each weilding large clubs. The beat the crap out of you and you die. The End.",	"You begin to walk faster, he takes notice and begins to advance towards you. Just then two large men emerge from the bushes and join with him. You break into a sprint and run as fast as you can. Luckily you were much faster than they were and you got away.",	"You greet the man and ask him if you could be of service. His reply is a snicker as two large men emerge from the bushes behind him. 'Yeah' he chuckles. 'You can give me those shoes' They beat the crap out of you , take your sheos, and you die. Not necessarily in that order. The End"],
+
+
 }
 }
