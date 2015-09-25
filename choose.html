@@ -1,85 +1,63 @@
-<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<HTML>
-   <HEAD>
-
-       
-             <link rel="stylesheet" href="css/style.css">
-<div id="wrapper">
-      <TITLE>
-        Choose your hero
-      </TITLE>
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  
-   </HEAD>
-<BODY>
-
-   <H1>Choose your hero</H1>
-
-
-   <P>Choose one of these three heroes. Base your decisions on what you think that hero would do.</P>
-    
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+        <title>Choose your hero</title>    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+  <div id="row">
+    <h1>Choose your hero</h1>
+    <p>Choose one of these three heroes. Base your decisions on what you think that hero would do.</p>
     <ul id="heros">
-        <li id="box">
-            <h1 id = "title">
-            Warrior
-            </h1>
-            <p id="select">
-           A Warrior is physically strong but not very smart.
-            Your choices should reflect on brute strength .
-            </p>
-            <button type="radio" name="warrior" id="warrior" onclick="heroChoiceW()"> Choose Warrior </button>
-           
-        </li>
-     
-        <li id="box">
-            <h1 id = "title">
-            Rogue
-            </h1>
-            <p id="select">
-          A rogue is not physically very strong but is very althletic and quick.
-                Your choices should reflect on speed, agility.
-            </p>
-            <button type="radio" name="rogue" id="rogue" onclick="heroChoiceR()"> Choose Rogue </button>
-        </li>
-
-        <li id="box">
-           <h1 id = "title3">
-            Apprentice
-            </h1>
-            <p id="select">
-           The apprentice wizard is not physically strong nor athletic but is very inteligent. You must use your mind and cunning to survive.
-            </p>
-            <button type="radio" name="apprentice" id="apprentice" onclick="heroChoiceA()" > Choose Apprentice </button>
-        </li>
-        <footer>
-      
-     </ul>
-     <p> Actually, it doesn't really matter who choose, (It was the Rogue, right?) that game is still under construction!<br> Instead try Goblin Punch which is essentially the basis of the combat system I would like to implement.
-     </p>
-
-    <div id="ready">
-    </div>
-    <Button class = "enter" id="enter" disabled=true>GOOD!</Button>
-<form action="punch.html">
-<button class = "pgame" id = "pgame" href="punch.html" disabled=true> Play Goblin Punch </button>
-</form>
-          
-</footer>
-</div>    
-
-      
-                                                  <div id="game" hidden=true>
-                                                   
-                                                  </div>
-   
-    <!-- <div id="output"> -->
-
+      <li class="box">
+        <div class="char-box">
+          <h1 id="title">Warrior</h1>
+          <p id="select">A Warrior is physically strong but not very smart. Your choices should reflect on brute strength .</p>
+        </div>
+        <button class="char-btn" type="radio" name="warrior" id="warrior" onclick="heroChoiceW()">Choose Warrior</button>
+      </li>
+      <li class="box">
+        <div class="char-box">
+          <h1 id="title">Rogue</h1>
+          <p id="select">A rogue is not physically very strong but is very althletic and quick. Your choices should reflect on
+          speed, agility.</p>
+        </div>
+        <button class="char-btn" type="radio" name="rogue" id="rogue" onclick="heroChoiceR()">Choose Rogue</button>
+      </li>
+      <li class="box">
+        <div class="char-box">
+          <h1 id="title3">Apprentice</h1>
+          <p id="select">The apprentice wizard is not physically strong nor athletic but is very inteligent. You must use your mind
+          and cunning to survive.</p>
+        </div>
+        <button class="char-btn" type="radio" name="apprentice" id="apprentice" onclick="heroChoiceA()">Choose Apprentice</button>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+    <div class="col-md-offset-1 col-md-10">Actually, it doesn&#39;t really matter who choose, (It was the Rogue, right?) that game is still under construction!</div>
+    <div class="col-md-offset-1 cal-md-10">Instead try Goblin Punch which is essentially the basis of the combat system I would like to implement.</div>
+  </div>
+    <div id="ready"></div>
+    <button class="enter" id="enter" disabled="true">GOOD!</button>
+    <form action="punch.html">
+      <button class="pgame" id="pgame" href="punch.html" disabled="true">Play Goblin Punch</button>
+    </form>
+  </div>
+  <div id="game" hidden="true"></div>
+  <!-- <div id="output"> -->
   <!--   </div> -->
-    
-    <script type="text/javascript" src="scripts/gameData.js"></script>
-<script type="text/javascript" src="scripts/Game.js"></script>
-    
-</BODY>
-    
-    
-</HTML>
+</div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/gameData.js"></script> 
+  <script type="text/javascript" src="scripts/Game.js"></script></body>
+</html>

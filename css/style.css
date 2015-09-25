@@ -1,114 +1,98 @@
-html {
-background-color: #f1e9c2;   
-    border-style:double;
-    border-color: black;
-    border-width: thick;
-    text-align:center;
-    font-family: papyrus; 
-    font-weight: bold;
+body {
+  background-color: #f1e9c2;   
+  border-style:double;
+  border-color: black;
+  border-width: thick;
+  text-align:center;
+  font-family: papyrus; 
+  font-weight: bold;
 }
-#proceed{
-color: teal;
-    background-color: black;
-font-family: copperplate; 
-    font-weight: bold;
-  
-}
-.Enter {
-    color: teal;
-    background-color: black;
-    width: 100px;
-    font-family: copperplate; 
-    font-weight: bold;
-  }
-#title3{
-  max-width:;
-}
-.pgame {
-color: #119944;
-background-color: black;
-width: 120px;
-font-family: copperplate; 
 
+ul {
+  list-style: none;
+  text-align: bottom;
+}
+
+h1{
+  margin-bottom: 51px
+}
+
+
+h3{
+ height: 40px;
+  width: 40px;
+  padding: 25px;
+  margin: 10px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:40px;
+  background-color: black;
+  color: teal;
+}
+
+.main-wrapper {
+  padding: 10px;
+}
+
+.char-box{
+  height: 240px;
+  padding: 5px;
+}
+.char-btn {
+  margin-bottom: 10px;
+}
+.enter {
+  color: teal;
+  background-color: black;
+  width: 100px;
+  font-family: copperplate; 
+  font-weight: bold;
+}
+
+.pgame {
+  color: #119944;
+  background-color: black;
+  width: 120px;
+  font-family: copperplate; 
 }
 
 .pgame:disabled{
-visibility: hidden;
+  visibility: hidden;
 }
 
-.Enter:disabled{
-visibility: hidden;
-
-}
-#select{
-    height:175px ;
-}
-h1{
-    margin-bottom: 51px
-
+.enter:disabled{
+  visibility: hidden;
 }
 
 .choice {
-width: 230px;
-
-}
-#wrapper{
-    display:inline-block;
-text-align: center;
-
-}
-    
-} If I remove this everythihng explodes
-
-ul {
-    list-style: none;
-    text-align: bottom;
-    max-width: 25px;
+  width: 230px;
 }
 
-#box {
-   
-display:inline-block;
-float: left;
-  width: 25%;
+.box {
+  display:inline-block;
+  width: 200px;
   margin: 2.5%;
   text-align: center;
   max-width: 240px;
   border-style: double;
+  height: 300px;
  }
 
-#score {
-display:inline-block;
-float: left;
-  width: 25%;
-  margin: 2.5%;
-  text-align: center;
-  max-width: 240px;
-  max-width: 240px;
-
-}
-
-  #option{
-display:inline-block;
-float: center;
+#option{
+  display:inline-block;
+  float: center;
   width: 25%;
   margin: 2.5%;
   text-align: center;
   max-width: 240px;
   text-align: center;
 }
-  
   
 #ready{
-    clear: both;
+  clear: both;
 }
 
- footer {
-clear: both;
-
- }
-
- #placeholder, #placeholder2{
+#placeholder, #placeholder2{
   height: 100px;
   width: 100px;
   padding: 25px;
@@ -124,38 +108,21 @@ clear: both;
   font-size: 20px;
 }
 
-
  #punch{
- color: #119944;
-background-color: black;
-width: 100px;
-height: 100px;
-font-family: copperplate; 
-border-radius: 50%;
-font-size: 22px;
-
-}
-h3{
- height: 40px;
-  width: 40px;
-  padding: 25px;
-  margin: 10px auto;
-  border: 1px solid gray;
-  border-radius: 10px;  
-  font-size:40px;
+  color: #119944;
   background-color: black;
-  color: teal;}
-
- 
- @media only screen and (max-width: 684px) {
-
-#box {
-
+  width: 100px;
+  height: 100px;
+  font-family: copperplate; 
+  border-radius: 50%;
+  font-size: 22px;
+}
+#score {
+  display:inline-block;
+  float: left;
   width: 25%;
   margin: 2.5%;
   text-align: center;
   max-width: 240px;
-  border-style: double;
- }
-
- }
+  max-width: 240px;
+}
