@@ -3,16 +3,21 @@
     <link rel="stylesheet" href="css/style.css">
     <TITLE>Let's play Goblin Punch!</TITLE>
        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+     <link rel="stylesheet" href="css/style.css" />
 
    </HEAD>
 <BODY>
    <H1>Goblin Punch!</H1>
    <P>Click the button to punch the goblin. A random number will be generated representing yours attack. <br> If your is higher or equal to the goblin's, it will take damage. Otherwise, you will take damage. Keep punching until someone wins! </P>
   
- 
+
 
    <ul id="uList">
-        <li class="box">
+        <li class="pbox">
             <h1>
              Player Roll
             </h1>
@@ -22,11 +27,11 @@
              <h3 id = "Health">
               6
              </h3>
+           </li>
            
-           
-        </li>
 
-     <li id="score">
+
+     <li class="rbox">
             <h1>
             Result
             </h1>
@@ -35,12 +40,12 @@
              <button id="punch">Punch!</button>
              <p></p>
              <!-- <button id="refresh"> Again!</button> -->
+                 </li>
            
-        
-        </li>
+ 
 
      
-        <li class="box">
+        <li class="pbox">
             <h1>
             Goblin Roll
             </h1>
@@ -50,8 +55,10 @@
              <h3 id = "gHealth">
               5
              </h3>
-        </li>
+                 </li>
+      
     </ul>
+
 
        
    <script type="text/javascript" src="scripts/Game.js"></script>
