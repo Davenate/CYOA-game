@@ -15,7 +15,9 @@ ul {
 h1{
   margin-bottom: 51px
 }
-
+h2{
+  height: 66px;
+}
 
 h3{
  height: 10px;
@@ -79,6 +81,7 @@ h3{
 
  .rbox {
   display:inline-block;
+  vertical-align: top;
   width: 200px;
   margin: 2.5%;
   text-align: center;
@@ -90,6 +93,7 @@ h3{
 
  .pbox {
   display:inline-block;
+  vertical-align: top;
   width: 200px;
   margin: 2.5%;
   text-align: center;
@@ -126,6 +130,7 @@ h3{
  }
 #placeholder3 {
   font-size: 20px;
+  height: 50px;
 }
 
  #punch{
